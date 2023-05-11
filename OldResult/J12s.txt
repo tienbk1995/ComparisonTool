@@ -1,0 +1,568 @@
+File	:{'Rule': 1}
+CanIf_Cfg.h	:{'ARR02': 1, 'DCL00': 1, 'DCL23': 119}
+ComM_Cfg_Internal.h	:{'ARR02': 4, 'DCL19': 1, 'DCL39': 2}
+Com_Cfg_Internal.h	:{'ARR02': 1, 'DCL23': 4, 'PRE00': 1, 'PRE02': 2, 'PRE12': 1}
+Com_PBcfg.h	:{'ARR02': 67}
+Crc_Cfg.h	:{'ARR02': 2, 'DCL06': 1, 'DCL19': 1, 'EXP07': 1, 'PRE00': 1, 'PRE12': 1}
+CryIf_Prv.h	:{'ARR02': 18, 'DCL00': 44, 'DCL13': 7, 'DCL19': 14}
+Dcm_Cfg_DslDsd.h	:{'ARR02': 7, 'DCL00': 6, 'DCL23': 8, 'PRE00': 1, 'PRE12': 1}
+Dcm_Lcfg_DspUds.h	:{'ARR02': 12, 'DCL00': 76, 'DCL13': 4}
+SecOC_Prv.h	:{'ARR02': 32, 'DCL00': 119, 'DCL06': 6, 'DCL12': 2, 'DCL19': 7, 'DCL23': 10, 'DCL39': 6, 'EXP07': 6, 'EXP20': 1, 'EXP34': 11, 'INT08': 2, 'INT12': 12, 'INT34': 1}
+rba_CryptoBCL_Cfg.h	:{'ARR02': 1, 'DCL06': 1, 'EXP07': 1}
+rba_CryptoHSM_Cfg.h	:{'ARR02': 1, 'DCL00': 4, 'DCL06': 5, 'DCL23': 16, 'EXP07': 5}
+rba_CryptoHSM_Prv.h	:{'ARR02': 1, 'DCL00': 99, 'DCL06': 3, 'DCL13': 2, 'DCL19': 7, 'DCL23': 25, 'EXP07': 3, 'PRE00': 1, 'PRE01': 1, 'PRE11': 1, 'PRE12': 1}
+BswM_Cfg_MRP.c	:{'ARR02': 1, 'DCL00': 1, 'DCL19': 1}
+BswM_PBcfg.c	:{'ARR02': 5, 'DCL06': 10, 'DCL19': 1, 'DCL23': 3, 'EXP07': 10}
+CanIf_PBcfg.c	:{'ARR02': 10, 'DCL06': 2, 'EXP07': 2}
+CanSM_PBcfg.c	:{'ARR02': 4, 'DCL15': 2, 'DCL19': 2}
+Can_PBcfg.c	:{'ARR02': 13}
+ComM_Cfg.c	:{'ARR02': 1, 'DCL00': 8, 'DCL19': 1}
+ComM_PBcfg.c	:{'ARR02': 5}
+Com_PBcfg.c	:{'ARR02': 1, 'DCL00': 2, 'DCL06': 70, 'DCL15': 67, 'DCL19': 67, 'DCL23': 12, 'DCL40': 10, 'EXP07': 70}
+Crc_Cfg.c	:{'ARR02': 1, 'DCL19': 1}
+CryIf_Cfg.c	:{'ARR02': 16, 'DCL19': 14}
+Csm_Cfg.c	:{'ARR02': 2, 'DCL00': 12, 'DCL02': 1, 'DCL06': 1, 'DCL15': 2, 'DCL19': 2, 'EXP07': 1}
+Dcm_Lcfg_DslDsd.c	:{'ARR02': 16, 'DCL00': 6, 'DCL06': 4, 'DCL19': 1, 'EXP07': 4}
+Dcm_Lcfg_DspUds.c	:{'ARR02': 31, 'DCL00': 28, 'DCL02': 39, 'DCL06': 39, 'DCL13': 1, 'DCL19': 2, 'DCL23': 9, 'EXP07': 39}
+Fls_Cfg.c	:{'ARR02': 7, 'DCL15': 1, 'DCL19': 1}
+NvM_Cfg.c	:{'ARR02': 94, 'DCL00': 96, 'DCL13': 7, 'DCL15': 2, 'DCL19': 2}
+PduR_PBcfg.c	:{'ARR02': 26, 'DCL15': 2, 'DCL19': 4}
+rba_CryptoBCL_Cfg.c	:{'ARR02': 1, 'DCL06': 1, 'DCL15': 3, 'DCL19': 3, 'EXP07': 1}
+rba_CryptoHSM_Cfg.c	:{'ARR02': 1, 'DCL00': 2, 'DCL06': 6, 'DCL15': 15, 'DCL19': 15, 'DCL23': 1, 'DCL40': 1, 'EXP07': 6}
+rb_cap_TxCanApplication_Cfg.h	:{'ARR02': 2, 'DCL19': 2, 'DCL23': 27, 'PRE00': 2, 'PRE02': 2, 'PRE08': 1}
+rb_dmim_ISOcommMgt_Cfg.h	:{'ARR02': 2, 'DCL06': 4, 'DCL19': 2, 'EXP07': 4}
+rb_vds_CustVehicleDynamicSensor_Cfg.h	:{'ARR02': 2}
+rb_wim_WarningIndicatorMgt_Cfg.h	:{'ARR02': 1, 'PRE00': 3}
+rb_dmim_ISOcommMgt_Cfg.c	:{'ARR02': 2, 'DCL19': 2, 'DCL40': 3}
+rb_sft_SafetySoftware_RomCfg.c	:{'ARR02': 2, 'DCL37': 1}
+rb_blif_BootLoaderDataAndFaultMemInterface_Cfg.h	:{'ARR02': 1, 'DCL02': 1, 'DCL19': 1}
+rb_dcds_ControlDTCSetting_Cfg.h	:{'ARR02': 1, 'DCL02': 1, 'DCL19': 1, 'PRE00': 2}
+rb_ddsc_DiagnosticSessionControl_Cfg.h	:{'ARR02': 1, 'DCL02': 1, 'DCL19': 1, 'PRE00': 1}
+rb_der_ECUReset_Cfg.h	:{'ARR02': 1, 'DCL02': 1, 'DCL19': 1, 'PRE00': 1}
+rb_dioc_InputOutputControlByIdentifier_Cfg.h	:{'ARR02': 1, 'DCL02': 1, 'PRE00': 4}
+rb_drc_RoutineControl_Cfg.h	:{'ARR02': 1, 'DCL02': 1, 'PRE00': 4}
+rb_drc_VDSCalibration_Cfg.h	:{'ARR02': 2, 'DCL19': 2}
+rb_drdi_ReadDataByIdentifier_Cfg.h	:{'ARR02': 10, 'DCL02': 1, 'DCL06': 2, 'DCL19': 11, 'DCL23': 2, 'EXP07': 2, 'PRE00': 6, 'PRE02': 1}
+rb_dsa_SecurityAccess_Cfg.h	:{'ARR02': 1, 'DCL02': 1, 'DCL06': 1, 'EXP07': 1, 'PRE00': 1, 'PRE02': 1}
+rb_dsm_DiagnosticServiceMgt_Cfg.h	:{'ARR02': 1, 'DCL19': 1, 'PRE00': 1, 'PRE02': 36, 'PRE12': 1}
+rb_dwdi_EndOfLineConfiguration_Cfg.h	:{'ARR02': 4, 'DCL19': 2, 'EXP00': 8}
+rb_dwdi_WriteDataByIdentifier_Cfg.h	:{'ARR02': 2, 'DCL02': 1, 'DCL19': 2, 'PRE00': 2, 'PRE02': 1}
+rb_ocs_CustOCSMgt_Cfg.h	:{'ARR02': 2, 'DCL19': 3, 'DCL23': 6}
+rb_cfge_NvmInitValues_EeCfg.c	:{'ARR02': 6, 'DCL06': 6, 'DCL19': 2, 'EXP00': 1, 'EXP05': 49, 'EXP07': 6, 'STR09': 1, 'STR34': 1}
+rb_blif_BootLoaderDataAndFaultMemInterface_RomCfg.c	:{'ARR02': 1, 'DCL19': 1}
+rb_dcds_ControlDTCSetting_RomCfg.c	:{'ARR02': 1, 'DCL19': 1}
+rb_ddsc_DiagnosticSessionControl_RomCfg.c	:{'ARR02': 1, 'DCL19': 1}
+rb_der_ECUReset_RomCfg.c	:{'ARR02': 1, 'DCL19': 1}
+rb_dioc_CrashActuatorTest_RomCfg.c	:{'ARR02': 2, 'DCL19': 2}
+rb_dioc_InputOutputControlByIdentifier_RomCfg.c	:{'ARR02': 1, 'PRE02': 1}
+rb_drc_RoutineControl_RomCfg.c	:{'ARR02': 1, 'PRE02': 3}
+rb_drc_VDSCalibration_RomCfg.c	:{'ARR02': 2, 'DCL19': 2, 'EXP14': 3, 'STR09': 2, 'STR34': 2}
+rb_drdi_ReadDataByIdentifier_RomCfg.c	:{'ARR02': 8, 'DCL06': 5, 'DCL15': 6, 'DCL19': 17, 'EXP07': 5, 'STR34': 70}
+rb_dsa_SecurityAccess_RomCfg.c	:{'ARR02': 1, 'DCL40': 1}
+rb_dsm_DiagnosticServiceMgt_RomCfg.c	:{'ARR02': 1, 'DCL19': 1}
+rb_dwdi_WriteDataByIdentifier_RomCfg.c	:{'ARR02': 2, 'DCL19': 2}
+rb_ocs_CustOCSMgt_RomCfg.c	:{'ARR02': 2, 'DCL19': 3}
+rb_vds_CustVehicleDynamicSensor_RomCfg.c	:{'ARR02': 2}
+rb_dwdi_EndOfLineConfiguration_RomCfg.c	:{'ARR02': 8, 'DCL15': 5, 'DCL19': 7, 'DCL40': 2}
+rb_psgs_CustGenericSensor.c	:{'ARR02': 1, 'DCL06': 2, 'DCL19': 1, 'EXP02': 1, 'EXP07': 2, 'INT34': 2, 'STR34': 3}
+rb_wimi_CustSysWiInterface.c	:{'ARR02': 2, 'DCL00': 5, 'DCL19': 8, 'EXP14': 40, 'INT34': 3, 'PRE02': 6, 'STR09': 34, 'STR34': 64}
+rb_dsm_CustReportDataByDtcNumber.c	:{'ARR02': 1, 'DCL00': 33, 'DCL06': 17, 'DCL13': 2, 'DCL19': 3, 'EXP07': 17, 'STR34': 9}
+rb_eol_CustEndOfLine.c	:{'ARR02': 1, 'DCL00': 32, 'DCL06': 1, 'DCL13': 6, 'DCL15': 1, 'DCL19': 13, 'DCL23': 2, 'DCL40': 2, 'EXP00': 1, 'EXP07': 1, 'EXP14': 7, 'EXP20': 5, 'EXP33': 1, 'STR34': 34}
+rb_dcds_CustDataSampler.c	:{'ARR02': 3, 'DCL00': 33, 'DCL06': 7, 'DCL15': 2, 'DCL19': 8, 'EXP00': 1, 'EXP02': 2, 'EXP07': 7, 'EXP14': 1, 'EXP32': 1, 'EXP36': 1, 'INT08': 3, 'INT30': 3, 'INT31': 3, 'INT34': 4, 'MSC24': 1, 'PRE02': 1, 'PRE08': 1, 'STR09': 3, 'STR34': 4}
+Dem_Cfg_Client_DataStructures.h	:{'ARR30': 2, 'DCL00': 3, 'DCL06': 1, 'DCL23': 2, 'EXP07': 1}
+SecOC_Prv_Utilities.c	:{'ARR30': 3, 'DCL00': 15, 'DCL06': 28, 'DCL19': 11, 'EXP07': 28, 'EXP14': 3, 'EXP34': 5, 'EXP36': 6, 'INT08': 17, 'INT30': 10, 'INT31': 4, 'INT34': 7}
+rba_CryptoBCL_Prv.c	:{'ARR30': 1, 'ARR37': 2, 'DCL00': 9, 'DCL06': 8, 'DCL15': 1, 'DCL19': 8, 'EXP07': 8, 'EXP36': 6}
+rb_simc_CustSensorInterfaceMonitoring.c	:{'ARR30': 6, 'DCL00': 3, 'DCL06': 4, 'DCL19': 31, 'EXP07': 4, 'EXP20': 1, 'INT34': 6, 'STR34': 1}
+rb_cdi_CustRxCanDataInterface.c	:{'ARR30': 2, 'ARR37': 12, 'DCL00': 83, 'DCL06': 11, 'DCL13': 24, 'DCL19': 2, 'DCL23': 1, 'DCL40': 1, 'EXP00': 2, 'EXP07': 11, 'INT08': 1, 'INT31': 1, 'STR34': 20}
+rb_cdp_CustRxCanDataProcessor.c	:{'ARR30': 5, 'DCL00': 12, 'DCL06': 4, 'DCL13': 4, 'DCL23': 1, 'DCL40': 1, 'EXP07': 4, 'EXP10': 1, 'EXP30': 1, 'EXP34': 3, 'EXP36': 2, 'INT08': 1, 'INT31': 1, 'PRE02': 10, 'STR34': 8}
+rb_cdp_CustTxCanDataProcessor.c	:{'ARR30': 1, 'DCL00': 4, 'DCL06': 1, 'EXP07': 1, 'INT08': 2, 'INT31': 2, 'PRE02': 8}
+rb_dcrm_CustReportManager.c	:{'ARR30': 5, 'ARR37': 25, 'DCL00': 261, 'DCL06': 41, 'DCL13': 74, 'DCL19': 74, 'DCL23': 1, 'DCL40': 1, 'EXP00': 3, 'EXP07': 41, 'EXP10': 2, 'EXP14': 5, 'EXP20': 11, 'EXP30': 2, 'EXP36': 3, 'INT08': 27, 'INT30': 17, 'INT31': 26, 'INT34': 6, 'MSC24': 2, 'PRE00': 2, 'PRE02': 2, 'STR09': 5, 'STR34': 55}
+rb_dcsm_CustStorageManager.c	:{'ARR30': 2, 'DCL00': 6, 'EXP20': 1, 'STR09': 1, 'STR34': 3}
+rb_dem_CustFFDataRecorder.c	:{'ARR30': 31, 'DCL00': 36, 'DCL06': 53, 'DCL13': 1, 'DCL15': 1, 'DCL19': 8, 'EXP00': 5, 'EXP07': 53, 'EXP33': 11, 'INT08': 8, 'INT30': 8, 'INT31': 8, 'PRE00': 1, 'PRE02': 5, 'PRE12': 1, 'STR34': 37}
+rb_vdt_CustVehicleDataTransfer.c	:{'ARR30': 3, 'DCL00': 31, 'DCL06': 36, 'DCL19': 6, 'DCL23': 1, 'EXP00': 1, 'EXP02': 3, 'EXP07': 36, 'INT08': 6, 'INT30': 2, 'INT31': 6}
+rb_adas_CustADASSignalHandler.c	:{'ARR37': 12, 'DCL00': 9, 'DCL02': 1, 'DCL06': 10, 'DCL13': 2, 'DCL19': 14, 'EXP07': 10, 'INT00': 7, 'INT08': 5, 'INT30': 5, 'INT31': 5, 'STR09': 6, 'STR34': 18}
+rb_dioc_CustInputOutputControlByIdentifier.c	:{'ARR37': 4, 'DCL00': 43, 'DCL06': 3, 'DCL13': 5, 'DCL15': 1, 'DCL19': 5, 'EXP07': 3, 'EXP34': 4, 'PRE00': 6, 'STR34': 7}
+rb_drc_CustVDSCalibration.c	:{'ARR37': 1, 'DCL00': 17, 'DCL06': 17, 'DCL13': 2, 'DCL15': 4, 'DCL19': 6, 'DCL40': 1, 'EXP07': 17, 'EXP20': 1, 'EXP33': 1, 'EXP34': 8, 'STR34': 4}
+rb_drdi_CustReadCrashRecorderData.c	:{'ARR37': 2, 'DCL00': 4, 'DCL06': 12, 'DCL19': 1, 'EXP02': 1, 'EXP07': 12, 'STR34': 4}
+BswM_Cfg_RL.h	:{'DCL00': 1}
+Csm_Prv.h	:{'DCL00': 20, 'DCL02': 1, 'DCL19': 5, 'EXP02': 1, 'EXP20': 1, 'EXP34': 5, 'INT08': 1, 'INT30': 1, 'PRE00': 1, 'PRE02': 1, 'STR34': 2}
+E2E_Prv_P01.h	:{'DCL00': 15, 'DCL06': 25, 'DCL19': 2, 'EXP07': 25, 'EXP20': 2, 'STR34': 6}
+E2E_Prv_P05.h	:{'DCL00': 17, 'DCL06': 9, 'EXP00': 2, 'EXP07': 9}
+E2E_Prv_P06.h	:{'DCL00': 17, 'DCL06': 9, 'EXP07': 9}
+rba_CryptoBCL_Prv.h	:{'DCL00': 52, 'DCL06': 1, 'DCL19': 2, 'DCL23': 9, 'EXP07': 1}
+BswM_Cfg_RL.c	:{'DCL00': 1}
+Csm.c	:{'DCL00': 11, 'DCL02': 1, 'DCL13': 1, 'EXP02': 2, 'EXP20': 2, 'STR34': 5}
+SecOC_PduRIF.c	:{'DCL00': 22, 'DCL06': 5, 'DCL13': 1, 'DCL19': 42, 'EXP07': 5, 'EXP20': 1, 'STR34': 4}
+SecOC_Prv.c	:{'DCL00': 100, 'DCL06': 44, 'DCL15': 7, 'DCL19': 16, 'DCL23': 5, 'DCL40': 5, 'EXP00': 7, 'EXP07': 44, 'EXP14': 1, 'EXP20': 7, 'EXP34': 37, 'INT00': 4, 'INT08': 14, 'INT17': 4, 'INT30': 10, 'INT31': 10, 'INT34': 1, 'STR34': 3}
+SecOC_Prv_Cfg.c	:{'DCL00': 1, 'DCL06': 35, 'DCL15': 30, 'DCL19': 30, 'EXP07': 35}
+SecOC_Prv_FreshIF.c	:{'DCL00': 17, 'DCL19': 1}
+rba_CryptoBCL.c	:{'DCL00': 1, 'DCL15': 2, 'DCL19': 11, 'STR34': 2}
+rba_CryptoBCL_Prv_KeyExchange.c	:{'DCL00': 17, 'DCL06': 1, 'DCL15': 1, 'DCL19': 6, 'DCL23': 3, 'DCL40': 3, 'EXP07': 1, 'EXP34': 1, 'INT08': 2, 'STR34': 31}
+rba_CryptoHSM.c	:{'DCL00': 1, 'DCL06': 1, 'DCL19': 14, 'EXP07': 1, 'STR34': 5}
+rba_CryptoHSM_CertificateParse.c	:{'DCL00': 1}
+rba_CryptoHSM_CertificateVerify.c	:{'DCL00': 4, 'DCL13': 1}
+rba_CryptoHSM_KeyExchangeCalcPubVal.c	:{'DCL00': 4, 'DCL13': 2}
+rba_CryptoHSM_KeyExchangeCalcSecret.c	:{'DCL00': 4}
+rba_CryptoHSM_KeyGenerate.c	:{'DCL00': 1}
+rba_CryptoHSM_Prv.c	:{'DCL00': 32, 'DCL06': 13, 'DCL15': 1, 'DCL19': 12, 'DCL23': 3, 'DCL40': 3, 'EXP07': 13, 'EXP34': 4, 'EXP36': 6, 'STR34': 1}
+rba_CryptoHSM_Prv_Cipher.c	:{'DCL00': 30, 'DCL06': 9, 'DCL15': 1, 'DCL19': 26, 'DCL23': 1, 'EXP00': 2, 'EXP07': 9, 'EXP34': 24, 'INT08': 2, 'INT30': 2, 'STR34': 18}
+rba_CryptoHSM_Prv_Mac.c	:{'DCL00': 29, 'DCL06': 2, 'DCL15': 2, 'DCL19': 21, 'EXP07': 2, 'EXP34': 6, 'STR34': 19}
+rba_CryptoHSM_Prv_Random.c	:{'DCL00': 32, 'DCL19': 11, 'DCL23': 1, 'DCL40': 1, 'EXP34': 1, 'STR34': 18}
+rba_CryptoHSM_Prv_SHE.c	:{'DCL00': 23, 'DCL19': 10, 'EXP34': 1, 'STR34': 9}
+Nvm_MultiBlockCallback.c	:{'DCL00': 3}
+rb_co_CrashOutput_Cfg.h	:{'DCL00': 1, 'DCL19': 1, 'PRE00': 2, 'PRE02': 17, 'PRE12': 2, 'STR09': 1, 'STR34': 1}
+rb_prd_ProductionDiagnosis_Cfg.h	:{'DCL00': 1, 'DCL19': 2, 'PRE03': 1, 'PRE08': 4}
+rb_dsm_DiagnosticServiceDefinitions_Cfg.h	:{'DCL00': 5, 'DCL19': 1}
+rb_eol_CustEndOfLineConfiguration_Cfg.h	:{'DCL00': 7, 'DCL06': 1, 'EXP07': 1}
+rb_iph_CustInfoPeakHold_Cfg.h	:{'DCL00': 2}
+rb_blif_PKISecurityInfo_RomCfg.c	:{'DCL00': 1, 'DCL15': 1, 'DCL19': 1, 'DCL40': 7}
+rb_eol_CustEndOfLineConfiguration_Cfg.c	:{'DCL00': 7, 'DCL23': 1}
+rb_algi_CustAlgoMainInterface.c	:{'DCL00': 2}
+rb_co_CustEventNotificationSignal.c	:{'DCL00': 35, 'DCL19': 29, 'DCL40': 1, 'EXP00': 1, 'EXP02': 12, 'EXP10': 2, 'EXP14': 3, 'EXP20': 4, 'EXP30': 2, 'EXP34': 1, 'INT00': 1, 'INT08': 1, 'INT13': 58, 'INT31': 1, 'INT34': 3, 'PRE02': 1, 'STR09': 113, 'STR34': 150}
+rb_coec_CustEmergencyCall.c	:{'DCL00': 14, 'DCL06': 2, 'DCL15': 2, 'DCL19': 8, 'DCL40': 1, 'EXP02': 1, 'EXP07': 2, 'INT00': 2, 'INT08': 4, 'INT13': 1, 'INT30': 2, 'INT31': 2, 'PRE02': 1, 'STR09': 5, 'STR34': 19}
+rb_cosc_CustCOSystemCallback.c	:{'DCL00': 1, 'DCL19': 1}
+rb_ocs_CustOCSApplication.c	:{'DCL00': 44, 'DCL13': 1, 'DCL15': 2, 'DCL19': 15, 'EXP02': 3, 'INT08': 5, 'INT13': 1, 'INT30': 5, 'INT31': 5, 'STR09': 4, 'STR34': 44}
+rb_ocs_CustOCSFaultMgt.c	:{'DCL00': 4, 'DCL13': 1}
+rb_sqmi_CustSquibMgtInterface.c	:{'DCL00': 2}
+rb_swm_CustSwitchManagement.c	:{'DCL00': 5, 'DCL06': 1, 'DCL19': 5, 'EXP07': 1, 'PRE00': 1, 'PRE12': 1, 'STR09': 4, 'STR34': 15}
+rb_wimi_CustPaoxInterface.c	:{'DCL00': 5, 'DCL19': 7, 'EXP14': 26, 'INT34': 1, 'PRE08': 1, 'STR09': 25, 'STR34': 38}
+rb_cfh_CustFmCanFaultHandler.c	:{'DCL00': 10, 'DCL19': 1, 'DCL23': 3, 'DCL40': 3, 'PRE02': 5, 'PRE08': 1, 'STR34': 20}
+rb_cdh_CustRxCanDataHandler.c	:{'DCL00': 85, 'DCL06': 1, 'DCL13': 6, 'DCL23': 3, 'DCL40': 3, 'EXP00': 1, 'EXP07': 1, 'PRE02': 1, 'STR34': 22}
+rb_cdh_CustTxCanDataHandler.c	:{'DCL00': 30, 'DCL06': 2, 'DCL13': 13, 'DCL15': 2, 'DCL19': 5, 'EXP07': 2}
+rb_drdi_CustReadDataByIdentifier.c	:{'DCL00': 67, 'DCL06': 8, 'DCL13': 2, 'DCL19': 16, 'DCL23': 1, 'DCL40': 1, 'EXP07': 8, 'PRE00': 1, 'PRE02': 2, 'STR34': 21}
+rb_dwdi_CustWriteDataByIdentifier.c	:{'DCL00': 4, 'DCL19': 1, 'PRE00': 1, 'PRE02': 1, 'PRE12': 1}
+rb_dcc_CustDCController.c	:{'DCL00': 3, 'DCL06': 1, 'EXP07': 1}
+rb_drmi_CustReportManagerInterface.c	:{'DCL00': 5}
+rb_kms_CustKeyMgmtSystem.c	:{'DCL00': 34, 'DCL06': 57, 'DCL13': 2, 'DCL15': 1, 'DCL19': 24, 'DCL40': 1, 'EXP00': 12, 'EXP07': 57, 'INT17': 1, 'INT34': 12, 'MSC24': 5, 'STR34': 52}
+rb_vdt_CustVehicleDataTransfer_Interfaces.h	:{'DCL00': 1, 'DCL06': 1, 'DCL23': 1, 'EXP07': 1}
+BswM_Cfg_AC.h	:{'DCL00': 1}
+BswM_Cfg_LE.h	:{'DCL00': 30, 'DCL23': 6, 'PRE08': 1}
+Com_Cbk.h	:{'DCL00': 92, 'DCL13': 13, 'PRE00': 1, 'PRE02': 1}
+Crc.h	:{'DCL00': 16}
+CryIf.h	:{'DCL00': 44, 'PRE00': 1, 'PRE02': 1}
+Csm.h	:{'DCL00': 80, 'DCL02': 6, 'DCL13': 1}
+Csm_Cbk.h	:{'DCL00': 4}
+Dcm_Cfg_DspUds.h	:{'DCL00': 3, 'DCL02': 1, 'DCL23': 2}
+Dcm_Lcfg_DslDsd.h	:{'DCL00': 48}
+Dem_Cfg_Clear.h	:{'DCL00': 6, 'DCL23': 1}
+Dem_Cfg_DTC_DataStructures.h	:{'DCL00': 7, 'DCL06': 6, 'DCL19': 1, 'EXP07': 6}
+Dem_Cfg_EventsCallback.h	:{'DCL00': 12}
+Dem_Cfg_Events_DataStructures.h	:{'DCL00': 29, 'DCL06': 21, 'EXP07': 21, 'INT08': 2, 'INT30': 2, 'INT31': 2}
+Dem_Cfg_NvmCallbacks.h	:{'DCL00': 40}
+Dem_Cfg_OperationCycle_DataStructures.h	:{'DCL00': 2}
+Dem_PrjEnvDataElement.h	:{'DCL00': 2}
+Det_cfg.h	:{'DCL00': 4, 'PRE00': 1}
+E2E.h	:{'DCL00': 1, 'PRE00': 1, 'PRE02': 1}
+E2E_P01.h	:{'DCL00': 11}
+E2E_P02.h	:{'DCL00': 11, 'DCL06': 1, 'EXP07': 1}
+E2E_P05.h	:{'DCL00': 12}
+E2E_P06.h	:{'DCL00': 12}
+E2E_Prv.h	:{'DCL00': 14, 'DCL06': 1, 'DCL19': 1, 'EXP07': 1}
+E2E_Prv_P02.h	:{'DCL00': 6, 'DCL06': 2, 'DCL19': 1, 'EXP00': 1, 'EXP07': 2, 'EXP20': 2, 'INT08': 1, 'INT30': 1}
+E2E_SM.h	:{'DCL00': 3}
+Fls.h	:{'DCL00': 23, 'DCL02': 2, 'PRE03': 1}
+MemIf_Cfg.h	:{'DCL00': 28}
+PduR_CanIf.h	:{'DCL00': 3}
+PduR_CanTp.h	:{'DCL00': 15}
+PduR_Com.h	:{'DCL00': 2}
+PduR_Com_Up.h	:{'DCL00': 2, 'PRE00': 3, 'PRE12': 1}
+PduR_Dcm.h	:{'DCL00': 4}
+PduR_SecOC.h	:{'DCL00': 5}
+PduR_SecOC_Up.h	:{'DCL00': 2, 'PRE00': 9, 'PRE12': 3}
+SecOC.h	:{'DCL00': 3, 'DCL02': 1}
+SecOC_PduRIF.h	:{'DCL00': 21, 'DCL13': 1}
+SecOC_Prv_CryptIF.h	:{'DCL00': 6, 'DCL19': 1}
+SecOC_Prv_FreshIF.h	:{'DCL00': 16}
+SecOC_Prv_PduRIF.h	:{'DCL00': 5, 'DCL06': 2, 'EXP07': 2, 'EXP34': 1}
+rba_CryptoBCL.h	:{'DCL00': 28, 'PRE00': 1, 'PRE02': 1}
+rba_CryptoHSM.h	:{'DCL00': 40, 'DCL13': 3, 'PRE00': 1, 'PRE02': 1}
+rba_DemBfm_Cfg_Nvm.h	:{'DCL00': 40, 'PRE02': 1}
+BswM_Cfg_AC.c	:{'DCL00': 1, 'DCL19': 1, 'DCL23': 1, 'PRE08': 1}
+BswM_Cfg_LE.c	:{'DCL00': 30, 'DCL23': 2, 'DCL40': 2}
+Crc.c	:{'DCL00': 16, 'DCL19': 4}
+CryIf.c	:{'DCL00': 2, 'EXP20': 1}
+CryIf_JobProcessing.c	:{'DCL00': 4, 'DCL19': 6, 'EXP20': 6}
+CryIf_KeyManagement.c	:{'DCL00': 38, 'DCL19': 41, 'EXP20': 31}
+CryIf_Prv.c	:{'DCL00': 42, 'DCL13': 7, 'DCL23': 1, 'DCL40': 1}
+Csm_Cipher.c	:{'DCL00': 12, 'DCL19': 2, 'EXP20': 14, 'EXP34': 2}
+Csm_Hash.c	:{'DCL00': 6, 'DCL19': 1, 'EXP20': 7}
+Csm_KeyManagement.c	:{'DCL00': 42, 'DCL19': 18, 'EXP20': 31}
+Csm_MAC.c	:{'DCL00': 12, 'DCL19': 2, 'EXP20': 14, 'EXP34': 2}
+Csm_Random.c	:{'DCL00': 3, 'DCL19': 1, 'EXP20': 5, 'EXP34': 1}
+Csm_SHE.c	:{'DCL00': 5, 'DCL19': 1, 'EXP20': 4, 'EXP34': 1}
+Dem_Cfg_Clear.c	:{'DCL00': 6}
+Dem_Cfg_NvmCallbacks.c	:{'DCL00': 40, 'DCL06': 34, 'EXP07': 34}
+E2E.c	:{'DCL00': 1}
+E2E_P01.c	:{'DCL00': 11, 'DCL06': 3, 'DCL19': 5, 'EXP07': 3, 'EXP20': 2, 'STR09': 4, 'STR34': 13}
+E2E_P02.c	:{'DCL00': 11, 'DCL19': 3, 'EXP20': 2, 'STR09': 4, 'STR34': 12}
+E2E_P05.c	:{'DCL00': 14, 'DCL06': 4, 'DCL19': 7, 'EXP07': 4, 'EXP20': 3, 'STR34': 6}
+E2E_P06.c	:{'DCL00': 14, 'DCL06': 5, 'DCL19': 8, 'EXP07': 5, 'EXP20': 3, 'STR34': 6}
+E2E_SM.c	:{'DCL00': 3, 'DCL19': 1, 'STR09': 8, 'STR34': 17}
+Eep_Cfg.c	:{'DCL00': 1, 'DCL19': 1}
+Fls.c	:{'DCL00': 23}
+PduR_LoTp.c	:{'DCL00': 15}
+PduR_UpIf.c	:{'DCL00': 7}
+PduR_UpTp.c	:{'DCL00': 4}
+PduR_dLoIf.c	:{'DCL00': 3}
+SecOC.c	:{'DCL00': 4, 'DCL02': 1, 'DCL06': 2, 'DCL19': 20, 'EXP07': 2, 'EXP20': 2, 'EXP34': 5, 'INT00': 2, 'STR34': 2}
+SecOC_Prv_CryptIF.c	:{'DCL00': 6, 'DCL19': 1, 'EXP34': 5}
+rba_CryptoBCL_CancelJob.c	:{'DCL00': 2, 'STR34': 2}
+rba_CryptoBCL_KeyCopy.c	:{'DCL00': 2, 'DCL19': 3}
+rba_CryptoBCL_KeyElementCopy.c	:{'DCL00': 4, 'DCL19': 3}
+rba_CryptoBCL_KeyElementGet.c	:{'DCL00': 4, 'DCL19': 1}
+rba_CryptoBCL_KeyElementIdsGet.c	:{'DCL00': 3, 'DCL19': 2}
+rba_CryptoBCL_KeyElementSet.c	:{'DCL00': 4, 'DCL19': 2}
+rba_CryptoBCL_KeyExchangeCalcPubVal.c	:{'DCL00': 3, 'DCL19': 1}
+rba_CryptoBCL_KeyExchangeCalcSecret.c	:{'DCL00': 3, 'DCL19': 3}
+rba_CryptoBCL_KeySetValid.c	:{'DCL00': 1, 'DCL19': 1}
+rba_CryptoBCL_ProcessJob.c	:{'DCL00': 2, 'DCL19': 2, 'EXP34': 4}
+rba_CryptoBCL_Prv_Hash.c	:{'DCL00': 4, 'DCL19': 1, 'EXP34': 1, 'STR34': 11}
+rba_CryptoHSM_CancelJob.c	:{'DCL00': 2, 'STR34': 2}
+rba_CryptoHSM_KeyCopy.c	:{'DCL00': 2, 'DCL19': 3, 'STR34': 1}
+rba_CryptoHSM_KeyElementCopy.c	:{'DCL00': 4, 'DCL19': 3, 'STR34': 2}
+rba_CryptoHSM_KeyElementCopyPartial.c	:{'DCL00': 7, 'DCL19': 3, 'STR34': 2}
+rba_CryptoHSM_KeyElementGet.c	:{'DCL00': 3, 'DCL19': 3, 'STR09': 2, 'STR34': 8}
+rba_CryptoHSM_KeyElementIdsGet.c	:{'DCL00': 3, 'DCL19': 2}
+rba_CryptoHSM_KeyElementSet.c	:{'DCL00': 2, 'DCL19': 2, 'STR34': 2}
+rba_CryptoHSM_KeySetValid.c	:{'DCL00': 1, 'DCL19': 1}
+rba_CryptoHSM_ProcessJob.c	:{'DCL00': 2, 'DCL19': 2, 'EXP34': 9}
+rba_CryptoHSM_Prv_KeyManagement.c	:{'DCL00': 13, 'DCL06': 4, 'DCL13': 2, 'DCL15': 2, 'DCL19': 19, 'DCL23': 1, 'DCL40': 1, 'EXP05': 4, 'EXP07': 4, 'EXP20': 1, 'STR34': 5}
+rba_CryptoHSM_RandomSeed.c	:{'DCL00': 3}
+rba_DemBfm_Cfg_Nvm.c	:{'DCL00': 40, 'DCL06': 34, 'EXP07': 34}
+Dem_EventAttribute.h	:{'DCL00': 4, 'PRE00': 2, 'PRE12': 1}
+Det_ErrorSaver.c	:{'DCL00': 4}
+Mcu.h	:{'DCL00': 2, 'PRE00': 1}
+rba_Can_Cfg_Time.h	:{'DCL00': 3, 'DCL02': 1, 'DCL13': 1}
+Eep_Rb_Timer.c	:{'DCL00': 1}
+rba_MemLib_Cfg_Callouts.h	:{'DCL00': 2}
+Rte_Dcm.h	:{'DCL00': 3}
+Rte_SecOC.h	:{'DCL00': 2, 'DCL23': 2, 'PRE00': 2, 'PRE02': 2, 'PRE12': 2}
+rb_dsai_CustDataSamplerAlgoInterface.c	:{'DCL00': 6, 'DCL15': 4, 'DCL19': 5, 'DCL23': 1, 'DCL40': 1, 'EXP00': 42, 'EXP02': 6, 'INT34': 9, 'STR09': 31, 'STR34': 31}
+rb_co_CustCrashOutput_Interfaces.h	:{'DCL00': 4, 'DCL23': 1}
+rb_codc_CustCODiagnosisCallback.c	:{'DCL00': 4, 'DCL13': 4}
+rb_codc_CustCODiagnosisCallback.h	:{'DCL00': 4, 'DCL13': 4}
+rb_coi_CustCrashOutputInterface.c	:{'DCL00': 2, 'DCL15': 1, 'DCL19': 1}
+rb_ocs_CustOCSCommAdapter.c	:{'DCL00': 3, 'DCL13': 1}
+rb_ocs_CustOCSCommAdapter.h	:{'DCL00': 3, 'DCL13': 1}
+rb_ocs_CustOCSManagement_Interfaces.h	:{'DCL00': 9, 'DCL13': 2, 'DCL23': 1}
+rb_vds_CustVehicleDynamicSensorHandler.c	:{'DCL00': 29, 'DCL06': 2, 'DCL15': 1, 'DCL19': 12, 'EXP07': 2, 'INT08': 10, 'INT30': 5, 'INT31': 9, 'INT34': 1, 'PRE02': 2, 'STR09': 4, 'STR34': 18}
+rb_vds_CustVehicleDynamicSensorHandler.h	:{'DCL00': 1}
+rb_wifh_CustWarningIndicatorFaultHandler.c	:{'DCL00': 4, 'DCL19': 15, 'INT34': 2, 'STR09': 1, 'STR34': 19}
+rb_wim_CustWarningIndicatorMgt_Interfaces.h	:{'DCL00': 4, 'DCL23': 1}
+rb_dsm_CustDSMTempFunctions.c	:{'DCL00': 7, 'PRE08': 1}
+rb_dsm_CustDSMTempFunctions.h	:{'DCL00': 7}
+rb_cap_CustFmCanApplication_Interfaces.h	:{'DCL00': 2, 'DCL23': 1}
+rb_cap_CustRxCanApplication_Interfaces.h	:{'DCL00': 153, 'DCL13': 32, 'DCL23': 1}
+rb_cdh_CustRxCanDataHandler.h	:{'DCL00': 1, 'EXP00': 1}
+rb_cdi_CustRxCanDataInterface.h	:{'DCL00': 1}
+rb_cdp_CustRxCanDataProcessor.h	:{'DCL00': 4}
+rb_cap_CustTxCanApplication_Interfaces.h	:{'DCL00': 47, 'DCL13': 12, 'DCL23': 1}
+rb_cdi_CustTxCanDataInterface.c	:{'DCL00': 25, 'DCL19': 4, 'STR09': 2, 'STR34': 3}
+rb_cdp_CustTxCanDataProcessor.h	:{'DCL00': 4}
+rb_fvh_CustFvHandler.c	:{'DCL00': 58, 'DCL06': 13, 'DCL13': 2, 'DCL19': 21, 'DCL23': 1, 'EXP07': 13, 'INT08': 11, 'INT30': 11, 'INT31': 7, 'PRE02': 41, 'STR34': 17}
+rb_fvh_CustFvHandler_Interfaces.h	:{'DCL00': 16, 'DCL13': 2}
+rb_dcdi_CustClearDiagnosticInformation.c	:{'DCL00': 3}
+rb_dcdi_CustClearDiagnosticInformation.h	:{'DCL00': 3}
+rb_dioc_CustInputOutputControlByIdentifier.h	:{'DCL00': 30, 'DCL13': 5}
+rb_drc_CustRoutineControl.c	:{'DCL00': 16, 'DCL06': 7, 'DCL19': 1, 'EXP07': 7, 'STR34': 12}
+rb_drc_CustRoutineControl.h	:{'DCL00': 8}
+rb_drc_CustRoutineControl_Interfaces.h	:{'DCL00': 8}
+rb_drc_CustVDSCalibration.h	:{'DCL00': 8, 'DCL06': 1, 'EXP07': 1}
+rb_drdi_CustReadCrashRecorderData.h	:{'DCL00': 4}
+rb_drdi_CustReadDataByIdentifier.h	:{'DCL00': 52, 'DCL13': 2}
+rb_dsa_CustSecurityAccess.c	:{'DCL00': 14, 'DCL13': 3, 'DCL19': 3, 'EXP34': 3, 'PRE08': 1}
+rb_dsa_CustSecurityAccess_Interfaces.h	:{'DCL00': 10, 'DCL13': 3}
+rb_dsm_CustDCMApplInterface.c	:{'DCL00': 1}
+rb_dsm_CustDiagnosticServiceInterface.c	:{'DCL00': 21, 'DCL06': 1, 'DCL23': 1, 'DCL40': 1, 'EXP07': 1, 'PRE02': 3, 'STR34': 2}
+rb_dsm_CustDiagnosticServiceInterface.h	:{'DCL00': 2}
+rb_dsm_CustReportDataByDtcNumber.h	:{'DCL00': 3}
+rb_dwdi_CustWriteDataByIdentifier.h	:{'DCL00': 3}
+rb_eol_CustEndOfLine_Interfaces.h	:{'DCL00': 12, 'DCL13': 2}
+rb_dcbm_CustBufferManager.c	:{'DCL00': 9, 'DCL19': 3, 'EXP02': 6, 'STR09': 1, 'STR34': 7}
+rb_dcci_CustDCControllerInterface.c	:{'DCL00': 9}
+rb_dcdd_CustDynamicDataSamplerInterface.c	:{'DCL00': 45, 'DCL06': 2, 'DCL13': 1, 'DCL15': 1, 'DCL19': 58, 'EXP00': 1, 'EXP07': 2, 'EXP14': 14, 'EXP20': 2, 'EXP36': 4, 'INT00': 34, 'INT08': 76, 'INT30': 46, 'INT31': 56, 'INT34': 2, 'PRE00': 3, 'PRE02': 2, 'PRE08': 1, 'PRE12': 1, 'STR09': 26, 'STR34': 71}
+rb_dcds_CustDataSampler.h	:{'DCL00': 4}
+rb_dcrm_CustReportManager.h	:{'DCL00': 2, 'PRE02': 3}
+rb_dcs_CustDataCollectorSystem_Interfaces.h	:{'DCL00': 233, 'DCL13': 67, 'DCL23': 1}
+rb_dem_CustFaultMgmt.c	:{'DCL00': 13, 'DCL06': 6, 'DCL19': 1, 'EXP07': 6, 'EXP33': 4, 'PRE02': 7, 'STR34': 8}
+rb_dem_CustFaultMgt_Interfaces.h	:{'DCL00': 35, 'DCL13': 1}
+rb_demi_CustEventChangedInterface.c	:{'DCL00': 3, 'PRE02': 2}
+rb_demi_CustInterface.c	:{'DCL00': 5, 'DCL19': 2}
+rb_kms_CustKeyMgmtSystem_Interfaces.h	:{'DCL00': 24, 'DCL13': 2}
+Compiler.h	:{'DCL02': 1, 'PRE00': 11, 'PRE01': 11, 'PRE02': 6, 'PRE12': 11}
+Compiler_Cfg.h	:{'DCL02': 11, 'PRE00': 3, 'PRE11': 1, 'PRE12': 1}
+Rte_Dcm_Type.h	:{'DCL02': 2}
+rb_spi_SpiDriver_Cfg.h	:{'DCL02': 2}
+rb_cap_RxCanApplicationOptions_Cfg.h	:{'DCL02': 1, 'DCL23': 5}
+rb_wifh_CustWarningIndicatorFaultHandler.h	:{'DCL02': 1}
+E2E_P22.h	:{'DCL06': 1, 'EXP07': 1}
+Adc_Cfg.c	:{'DCL06': 2, 'EXP07': 2}
+CanTp_Cfg.c	:{'DCL06': 2, 'DCL19': 1, 'DCL39': 2, 'EXP07': 2}
+Dem_Cfg_Client_DataStructures.c	:{'DCL06': 1, 'EXP07': 1}
+Dem_Cfg_DTC_DataStructures.c	:{'DCL06': 2, 'DCL19': 1, 'EXP07': 2, 'INT13': 280}
+Dem_Cfg_Events_DataStructures.c	:{'DCL06': 2, 'EXP07': 2}
+Port_Cfg.c	:{'DCL06': 2, 'EXP07': 2}
+Rte_NvM_Type.h	:{'DCL06': 1, 'EXP07': 1}
+Rte_SecOC_Type.h	:{'DCL06': 1, 'EXP07': 1}
+rb_csem_CentralSensorMgt_Cfg.h	:{'DCL06': 1, 'EXP07': 1, 'PRE00': 2, 'STR09': 1, 'STR34': 1}
+rb_dcs_DataCollectorSystem_InterfacesStaticDefinitions_Cfg.h	:{'DCL06': 68, 'DCL23': 3, 'EXP00': 6, 'EXP07': 68, 'PRE00': 1, 'PRE02': 5, 'STR09': 6, 'STR34': 6}
+rb_sqm_SquibMgt_Cfg.h	:{'DCL06': 6, 'DCL19': 7, 'EXP07': 6}
+rb_swm_SwitchMgt_Cfg.h	:{'DCL06': 1, 'DCL23': 4, 'EXP07': 1, 'PRE00': 25, 'PRE02': 1, 'PRE12': 5}
+rb_drdi_CustReadDataByIdentifier_EeCfg.c	:{'DCL06': 6, 'DCL40': 1, 'EXP07': 6}
+rb_kms_CustKeyMgmtSystem_EeCfg.c	:{'DCL06': 1, 'EXP07': 1}
+rb_alg_AlgoParameters_RomCfg_1.c	:{'DCL06': 1, 'DCL23': 1, 'DCL40': 2, 'EXP07': 1, 'PRE06': 1}
+rb_alg_AlgoParameters_RomCfg_2.c	:{'DCL06': 1, 'DCL19': 7, 'DCL23': 1, 'DCL40': 2, 'EXP07': 1, 'PRE06': 1}
+rb_alg_AlgoParameters_RomCfg_3.c	:{'DCL06': 1, 'DCL19': 7, 'DCL23': 1, 'DCL40': 2, 'EXP07': 1, 'PRE06': 1}
+rb_alg_AlgoParameters_RomCfg_4.c	:{'DCL06': 1, 'DCL19': 7, 'DCL23': 1, 'DCL40': 2, 'EXP07': 1, 'PRE06': 1}
+rb_alg_MainIDs_RomCfg_1.c	:{'DCL06': 1, 'DCL23': 1, 'DCL40': 1, 'EXP07': 1, 'PRE06': 1}
+rb_alg_MainIDs_RomCfg_2.c	:{'DCL06': 1, 'DCL19': 2, 'DCL23': 1, 'DCL40': 1, 'EXP07': 1, 'PRE06': 1}
+rb_alg_MainIDs_RomCfg_3.c	:{'DCL06': 1, 'DCL19': 2, 'DCL23': 1, 'DCL40': 1, 'EXP07': 1, 'PRE06': 1}
+rb_alg_MainIDs_RomCfg_4.c	:{'DCL06': 1, 'DCL19': 2, 'DCL23': 1, 'DCL40': 1, 'EXP07': 1, 'PRE06': 1}
+rb_drdi_CustReadDataByIdentifier_Cfg.c	:{'DCL06': 1, 'EXP07': 1}
+rb_blif_PKISecurityInfo_Cfg.h	:{'DCL06': 4, 'EXP07': 4}
+rb_dioc_CrashActuatorTest_Cfg.h	:{'DCL06': 1, 'DCL19': 2, 'EXP07': 1}
+rb_drdi_ReadCrashRecorderData_Cfg.h	:{'DCL06': 2, 'EXP07': 2}
+rb_vdt_CustVehicleDataTransfer_Cfg.h	:{'DCL06': 3, 'DCL19': 1, 'DCL23': 11, 'EXP00': 23, 'EXP07': 3, 'PRE00': 1, 'PRE02': 1, 'PRE11': 1}
+rb_vdt_CustVehicleDataTransfer_RomCfg.c	:{'DCL06': 1, 'DCL19': 1, 'EXP00': 1, 'EXP07': 1}
+rb_csem_CentralSensorMgt_Cfg.c	:{'DCL06': 2, 'DCL23': 2, 'DCL40': 7, 'STR34': 1}
+rb_ctf_CustTemporatyFunctions.h	:{'DCL07': 1, 'DCL20': 1}
+CanTp_Types.h	:{'DCL12': 1, 'DCL39': 1}
+rb_sfsm_StackMonitoringpar_Cfg.h	:{'DCL15': 1, 'DCL19': 1, 'EXP00': 5, 'EXP36': 2}
+rb_cci_CustCanInterface.c	:{'DCL15': 1, 'DCL19': 1, 'PRE02': 2}
+Csm_Init.c	:{'DCL19': 1, 'EXP20': 1}
+Csm_MainFunction.c	:{'DCL19': 5, 'EXP20': 1}
+rb_psei_CustPeripheralSensorInterface.c	:{'DCL19': 1, 'STR09': 1, 'STR34': 1}
+rb_swmp_CustPadsInterface.c	:{'DCL19': 2}
+rb_bg_CustBackgroundProcess.c	:{'DCL19': 2, 'INT08': 1, 'INT30': 1, 'INT31': 1, 'STR34': 3}
+rb_mm_CustMazdaPlantModeHandler.c	:{'DCL19': 13, 'PRE02': 4}
+BswM_PBcfg.h	:{'DCL19': 1}
+CanTp_Cfg.h	:{'DCL19': 1, 'DCL23': 7, 'PRE00': 2, 'PRE12': 1}
+PduR_Cfg.h	:{'DCL19': 1}
+Com_Cfg.c	:{'DCL19': 1, 'DCL23': 8, 'DCL40': 8}
+Csm_Cfg_Cbk.c	:{'DCL19': 1}
+Ea_Cfg.c	:{'DCL19': 1}
+Fee_Cfg.c	:{'DCL19': 1}
+Spi_PBcfg.c	:{'DCL19': 1, 'DCL23': 1}
+rb_acc_AlgoConsistencyChecks_Cfg.h	:{'DCL19': 2, 'STR09': 2, 'STR34': 19}
+rb_alg_AlgoExternDefinitions.h	:{'DCL19': 27}
+rb_bswm_BasicSwMgt_Cfg.h	:{'DCL19': 1}
+rb_cap_FmCanApplication_Cfg.h	:{'DCL19': 2, 'PRE00': 1, 'PRE02': 1}
+rb_dcc_DCController_Cfg.h	:{'DCL19': 1}
+rb_pomm_powermanager_Cfg.h	:{'DCL19': 1, 'PRE02': 1}
+rb_sbsh_HWBasedSecurityBaseServices_Cfg.h	:{'DCL19': 3, 'DCL23': 1}
+rb_sfh_SensorFilterHandler_Cfg.h	:{'DCL19': 1, 'PRE00': 4}
+rb_swvc_SoftwareVersion_Cfg.h	:{'DCL19': 2}
+rb_syca_SysConfAsics_Cfg.h	:{'DCL19': 1, 'EXP00': 1, 'PRE00': 1, 'STR09': 1, 'STR34': 1}
+rb_sycp_SysConfPs_Cfg.h	:{'DCL19': 1, 'EXP00': 2, 'PRE00': 6, 'STR09': 2, 'STR34': 2}
+rb_bswm_BasicSwMgt_Cfg.c	:{'DCL19': 1, 'DCL40': 1}
+rb_co_CrashOutput_Cfg.c	:{'DCL19': 1}
+rb_dcc_DCController_Cfg.c	:{'DCL19': 1, 'EXP32': 39}
+rb_pomm_powermanager_Cfg.c	:{'DCL19': 1, 'DCL40': 3}
+rb_prd_ProductionDiagnosis_Cfg.c	:{'DCL19': 2, 'DCL40': 2}
+rb_sbsh_HWBasedSecurityBaseServices_Cfg.c	:{'DCL19': 3}
+rb_sfh_SensorFilterHandler_Cfg.c	:{'DCL19': 1, 'DCL23': 1, 'DCL40': 2}
+rb_sqm_SquibMgt_Cfg.c	:{'DCL19': 7, 'DCL23': 2, 'DCL40': 2, 'PRE00': 1, 'PRE02': 1, 'PRE12': 1}
+rb_swvc_SoftwareVersion_Cfg.c	:{'DCL19': 2, 'DCL23': 2, 'DCL40': 5}
+rb_syca_SysConfAsics_Cfg.c	:{'DCL19': 1, 'DCL23': 1, 'DCL40': 2}
+rb_sycp_SysConfPs_Cfg.c	:{'DCL19': 1, 'DCL23': 2, 'DCL40': 2}
+rb_cap_FmCanApplication_RomCfg.c	:{'DCL19': 2}
+rb_cap_RxCanApplication_RomCfg.c	:{'DCL19': 4}
+rb_cap_TxCanApplication_RomCfg.c	:{'DCL19': 4}
+rb_dcc_CommunicationControl_Cfg.h	:{'DCL19': 2, 'PRE00': 2, 'PRE02': 5}
+rb_dcc_CommunicationControl_RomCfg.c	:{'DCL19': 2}
+rb_simc_CustSensorInterfaceMonitoring.h	:{'DCL19': 6}
+rb_blif_BootLoaderInterfaceSimplified_EeCfg.c	:{'DCL23': 3, 'DCL40': 11}
+Crypto_GeneralTypes.h	:{'DCL23': 8}
+Dem_Cfg_AssertionChk.h	:{'DCL23': 3, 'EXP00': 44}
+rb_cap_RxCanApplication_Cfg.h	:{'DCL23': 5, 'PRE00': 2, 'PRE08': 1}
+rb_co_CustCrashOutput_Cfg.h	:{'DCL23': 3, 'INT12': 8}
+rb_fvh_CustFvHandler_Cfg.h	:{'DCL23': 9, 'PRE02': 8}
+rb_sycc_SysConfCs_Cfg.h	:{'DCL23': 1, 'PRE00': 3}
+rb_sycg_SysConfGeneral_Cfg.h	:{'DCL23': 4, 'EXP00': 2, 'PRE00': 1, 'STR09': 2, 'STR34': 2}
+BswM_Cfg_MRP.h	:{'DCL23': 5}
+Can_Cfg.h	:{'DCL23': 30, 'PRE00': 4, 'PRE03': 1, 'PRE12': 3}
+Com_Cfg_SymbolicNames.h	:{'DCL23': 116}
+Com_PBcfg_InternalId.h	:{'DCL23': 130}
+CryIf_Cfg.h	:{'DCL23': 17}
+Csm_Cfg.h	:{'DCL23': 9}
+Csm_Types.h	:{'DCL23': 3, 'PRE00': 1, 'PRE02': 1}
+DemAdapter_Cfg_EventId.h	:{'DCL23': 17}
+Dem_Cfg_Client.h	:{'DCL23': 1}
+Dem_Cfg_DTCs.h	:{'DCL23': 4}
+Dem_Cfg_Deb.h	:{'DCL23': 551, 'PRE02': 1, 'PRE11': 1}
+Dem_Cfg_DistMem.h	:{'DCL23': 3}
+Dem_Cfg_DtcId.h	:{'DCL23': 221, 'PRE11': 2}
+Dem_Cfg_EnvDataElement.h	:{'DCL23': 3}
+Dem_Cfg_EnvDid.h	:{'DCL23': 1}
+Dem_Cfg_EvBuff.h	:{'DCL23': 6}
+Dem_Cfg_EvMem.h	:{'DCL23': 16}
+Dem_Cfg_EventCategory.h	:{'DCL23': 3}
+Dem_Cfg_EventId.h	:{'DCL23': 620}
+Dem_Cfg_EventIndicators.h	:{'DCL23': 6, 'PRE00': 5, 'PRE12': 2}
+Dem_Cfg_Events.h	:{'DCL23': 18}
+Dem_Cfg_StorageCondition.h	:{'DCL23': 336}
+Dio_Cfg.h	:{'DCL23': 79, 'PRE11': 1}
+Ea_Cfg.h	:{'DCL23': 118}
+Fee_Cfg.h	:{'DCL23': 89, 'PRE00': 1, 'PRE02': 1}
+NvM_Cfg.h	:{'DCL23': 414}
+PduR_Cfg_SymbolicNames.h	:{'DCL23': 100}
+Port_Cfg.h	:{'DCL23': 13, 'PRE11': 1}
+SecOC_Cfg.h	:{'DCL23': 16}
+SecOC_Types.h	:{'DCL23': 2, 'PRE00': 1, 'PRE02': 1}
+Spi_Cfg.h	:{'DCL23': 4, 'PRE00': 10, 'PRE01': 1, 'PRE11': 1, 'PRE12': 6}
+rba_DemBfm_Cfg.h	:{'DCL23': 10, 'PRE02': 2}
+rb_br_BackgroundRealtimeOverrideOptions_Cfg.h	:{'DCL23': 1}
+rb_ci_ComInterfaceOptions_Cfg.h	:{'DCL23': 7}
+rb_dsa_DataSamplerAlgoOverrideOptions_Cfg.h	:{'DCL23': 1}
+rb_fcl_FireControlLogicalOverrideOptions_Cfg.h	:{'DCL23': 1}
+rb_sbs_SecurityBaseServicesOptions_Cfg.h	:{'DCL23': 1}
+rb_slm_SecureLifecycleManagerOptions_Cfg.h	:{'DCL23': 1}
+rb_wim_WarningIndicatorMgtOverrideOptions_Cfg.h	:{'DCL23': 1}
+Bfx_MemMap.h	:{'DCL23': 2, 'PRE06': 1}
+BswM_Cfg_MemMap.h	:{'DCL23': 16, 'PRE06': 1}
+BswM_MemMap.h	:{'DCL23': 2, 'PRE06': 1}
+CanIf_MemMap.h	:{'DCL23': 10, 'PRE06': 1}
+CanSM_MemMap.h	:{'DCL23': 12, 'PRE06': 1}
+CanTp_MemMap.h	:{'DCL23': 6, 'PRE06': 1}
+Can_MemMap.h	:{'DCL23': 6, 'PRE06': 1}
+ComM_Cfg_MemMap.h	:{'DCL23': 4, 'PRE06': 1}
+Com_MemMap.h	:{'DCL23': 16}
+Crc_MemMap.h	:{'DCL23': 8, 'PRE06': 1}
+Dcm_Cfg_MemMap.h	:{'DCL23': 2, 'PRE06': 1}
+Dem_Cfg_MemMap.h	:{'DCL23': 8, 'PRE06': 1}
+E2E_MemMap.h	:{'DCL23': 2, 'PRE06': 1}
+Ea_MemMap.h	:{'DCL23': 14, 'PRE06': 1}
+Eep_MemMap.h	:{'DCL23': 12, 'PRE06': 1}
+Fee_MemMap.h	:{'DCL23': 16, 'PRE06': 1}
+Fls_MemMap.h	:{'DCL23': 2, 'PRE06': 1}
+MemIf_MemMap.h	:{'DCL23': 2, 'PRE06': 1}
+NvM_MemMap.h	:{'DCL23': 8, 'PRE06': 1}
+PduR_MemMap.h	:{'DCL23': 4, 'PRE06': 1}
+SecOC_MemMap.h	:{'DCL23': 4, 'PRE06': 1}
+rba_Can_MemMap.h	:{'DCL23': 12, 'PRE06': 1}
+rba_CryptoHSM_MemMap.h	:{'DCL23': 16, 'PRE06': 1}
+rba_DiagLib_MemMap.h	:{'DCL23': 2, 'PRE06': 1}
+rba_MemLib_MemMap.h	:{'DCL23': 2, 'PRE06': 1}
+rba_CryptoHSM_Cfg_SchM.h	:{'DCL23': 2, 'PRE00': 22}
+CryIf_MemMap.h	:{'DCL23': 6, 'PRE06': 1}
+Csm_Cfg_SchM.h	:{'DCL23': 2, 'PRE00': 6}
+Csm_MemMap.h	:{'DCL23': 4, 'PRE06': 1}
+rba_BCL_Core_autoconf.h	:{'DCL23': 56}
+rba_CryptoBCL_Cfg_SchM.h	:{'DCL23': 4, 'PRE00': 14}
+rba_CryptoBCL_MemMap.h	:{'DCL23': 10, 'PRE06': 1}
+rb_rmac_ReleaseMatrix_Cfg.h	:{'DCL23': 13}
+rb_acc_AlgoConsistencyChecks_InterfacesStaticDefinitions_Cfg.h	:{'DCL23': 1}
+rb_algc_AfnFireFlagCreation_Cfg.h	:{'DCL23': 2}
+rb_algc_ErrPrequalification_Cfg.h	:{'DCL23': 1}
+rb_algc_FrontReaAlgo_General_Cfg.h	:{'DCL23': 15}
+rb_dsa_DataSamplerAlgoCust_Cfg.h	:{'DCL23': 4, 'PRE02': 1, 'PRE11': 4}
+rb_sim_SensorInterfaceMonitoring_Cfg.h	:{'DCL23': 1}
+rb_dcdd_DynamicDataSampler_Cfg.h	:{'DCL23': 32, 'PRE02': 58}
+rb_dcrm_ReportManager_Cfg.h	:{'DCL23': 1753, 'PRE02': 10}
+rb_dcs_CustDataCollector_Cfg.h	:{'DCL23': 85, 'PRE00': 4, 'PRE02': 78}
+rb_prod_ProductionDiagnosis_InterfacesStaticDefinitions_Cfg.h	:{'DCL23': 1}
+rb_csem_CustCentralSensorMgtOptions_Cfg.h	:{'DCL23': 1}
+rb_ocs_CustOCSComInterfaceOption_Cfg.h	:{'DCL23': 1}
+rb_blif_BootLoaderInterfaceSimplified_Cfg.h	:{'DCL23': 3, 'PRE02': 3}
+rb_simc_CustSensorInterfaceMonitoring_Interfaces.h	:{'DCL23': 1}
+rb_simc_CustSensorInterfaceMonitoring_InterfacesStaticDefinitions.h	:{'DCL23': 1}
+rb_co_CustCrashOutput_InterfacesStaticDefinitions.h	:{'DCL23': 1}
+rb_ocs_CustOCSKlineComInterface.h	:{'DCL23': 1}
+rb_ocs_CustOCSManagement_InterfacesStaticDefinitions.h	:{'DCL23': 1}
+rb_wim_CustWarningIndicatorMgt_InterfacesStaticDefinitions.h	:{'DCL23': 1}
+rb_cap_CustFmCanApplication_InterfacesStaticDefinitions.h	:{'DCL23': 1}
+rb_cap_CustRxCanApplication_InterfacesStaticDefinitions.h	:{'DCL23': 1}
+rb_cap_CustTxCanApplication_InterfacesStaticDefinitions.h	:{'DCL23': 1}
+rb_cma_CustComApplication_Interfaces.h	:{'DCL23': 1}
+rb_drc_CustRoutineControl_InterfacesStaticDefinitions.h	:{'DCL23': 1}
+rb_dsa_CustSecurityAccess_InterfacesStaticDefinitions.h	:{'DCL23': 1}
+rb_dcs_CustDataCollectorSystem_InterfacesStaticDefinitions.h	:{'DCL23': 1}
+rb_kms_CustKeyMgmtSystem_InterfacesStaticDefinitions.h	:{'DCL23': 1}
+rb_vdt_CustVehicleDataTransfer_InterfacesStaticDefinitions.h	:{'DCL23': 1}
+rb_algm_DisableLineSettings_RomCfg.c	:{'DCL23': 1, 'STR09': 16, 'STR34': 16}
+rb_sycc_SysConfCs_Cfg.c	:{'DCL23': 1, 'DCL40': 1}
+rb_sycg_SysConfGeneral_Cfg.c	:{'DCL23': 2, 'DCL40': 5}
+rb_syco_SysConfAOut_Cfg.c	:{'DCL23': 1, 'DCL40': 2}
+rb_sycs_SysConfSwm_Cfg.c	:{'DCL23': 1, 'DCL40': 2}
+rb_sdm_SafeDataMgt_RomCfg.c	:{'DCL23': 1, 'DCL40': 1, 'EXP05': 36, 'EXP32': 3}
+Eep_Rb_Timer.h	:{'DCL37': 1, 'PRE00': 1}
+rba_BCL_Core_types.h	:{'DCL37': 3, 'PRE03': 1}
+rb_sfsm_Stacks_Cfg.h	:{'DCL40': 1, 'EXP00': 2}
+rb_aodp_AODParameters_Cfg.c	:{'DCL40': 2}
+rb_dcs_CustDCController_Cfg.c	:{'DCL40': 1}
+rb_dem_FaultMgt_Cfg.c	:{'DCL40': 1}
+rb_psem_PeripheralSensorMgt_Cfg.c	:{'DCL40': 3}
+rb_svr_SafetyVoltageRegulator_Cfg.c	:{'DCL40': 2}
+rb_swm_SwitchMgt_Cfg.c	:{'DCL40': 2}
+rb_sycf_SysConfSqm_Cfg.c	:{'DCL40': 2}
+rb_drdi_ReadCrashRecorderData_EeCfg.c	:{'DCL40': 1}
+rb_dsa_SecurityAccess_EeCfg.c	:{'DCL40': 1}
+rb_dwdi_WriteDataByIdentifier_EeCfg.c	:{'DCL40': 1}
+rb_sdm_SafeDataMgt_EeCfg.c	:{'DCL40': 1, 'EXP00': 1, 'STR09': 1, 'STR34': 1}
+rb_blif_BootLoaderInterfaceSimplified_RomCfg.c	:{'DCL40': 1}
+rb_drdi_ReadCrashRecorderData_RomCfg.c	:{'DCL40': 1}
+rb_ctf_CustTemporatyFunctions.c	:{'DCL40': 1}
+rb_dsai_CustDataSamplerAlgoInterface.h	:{'EXP00': 3, 'PRE02': 2}
+rb_sycf_SysConfSqm_Cfg.h	:{'EXP00': 2}
+rb_syco_SysConfAOut_Cfg.h	:{'EXP00': 2}
+rb_sycs_SysConfSwm_Cfg.h	:{'EXP00': 2, 'STR09': 2, 'STR34': 2}
+rb_dcrm_ReportManager_Cfg.c	:{'EXP00': 8, 'EXP32': 117}
+rb_sdm_SafeDataMgt_Cfg.h	:{'EXP00': 3, 'STR09': 3, 'STR34': 3}
+rb_edpi_CustEnvDataPreparationInterface.c	:{'EXP14': 68}
+rb_dcdd_DynamicDataSampler_Cfg.c	:{'EXP32': 122}
+Adc_Cfg.h	:{'PRE00': 1}
+Crypto_Prv.h	:{'PRE00': 4, 'PRE12': 4}
+Dem_Cfg.h	:{'PRE00': 1, 'PRE01': 1, 'PRE02': 1}
+Fls_Rb_Extension.h	:{'PRE00': 1, 'PRE12': 1}
+PduR_CanIf_Lo.h	:{'PRE00': 9, 'PRE12': 2}
+PduR_CanTp_Lo.h	:{'PRE00': 20, 'PRE12': 5}
+PduR_Dcm_Up.h	:{'PRE00': 8, 'PRE12': 1}
+rba_DemBfm_Utils.h	:{'PRE00': 6}
+BswM_Cfg_SchM.h	:{'PRE00': 2}
+CanTp_Cfg_SchM.h	:{'PRE00': 2}
+Com_Cfg_SchM.h	:{'PRE00': 4}
+Dem_Cfg_SchM.h	:{'PRE00': 6}
+Det_Cfg_SchM.h	:{'PRE00': 2}
+Ea_Cfg_SchM.h	:{'PRE00': 2}
+Eep_Cfg_SchM.h	:{'PRE00': 2}
+Fee_Cfg_SchM.h	:{'PRE00': 2, 'PRE02': 2}
+Fls_Cfg_SchM.h	:{'PRE00': 2}
+MemIf_Cfg_SchM.h	:{'PRE00': 2}
+NvM_Cfg_SchM.h	:{'PRE00': 2}
+SchM_Adc.h	:{'PRE00': 16}
+SchM_Default.h	:{'PRE00': 2}
+SecOC_Cfg_SchM.h	:{'PRE00': 10}
+Spi_Cfg_SchM.h	:{'PRE00': 2, 'PRE02': 2}
+rba_Can_Cfg_SchM.h	:{'PRE00': 10}
+rb_os_CanIrq_Cfg.h	:{'PRE00': 11}
+rb_psem_PeripheralSensorMgt_Cfg.h	:{'PRE00': 1}
+rb_wimi_SysWI_Cfg.h	:{'PRE00': 1, 'PRE02': 2}
+rb_dcdi_ClearDiagnosticInformation_Cfg.h	:{'PRE00': 1}
+rb_dem_CustFaultMgt_Cfg.h	:{'PRE00': 3, 'PRE01': 1, 'PRE02': 2}
+rb_sycp_CustSysConfPs_Cfg.h	:{'PRE00': 1, 'PRE12': 1}
+rb_coec_CustEmergencyCall.h	:{'PRE00': 1, 'PRE01': 1, 'PRE02': 4}
+rba_FlsRH850P1xC_cfg.h	:{'PRE02': 1, 'PRE06': 1}
+rb_kms_CustKeyMgmtSystem_Cfg.h	:{'PRE02': 5}
+rb_wimi_PAOx_Cfg.h	:{'PRE02': 2}
+rb_eol_CustEndOfLine_InterfacesStaticDefinitions.h	:{'PRE02': 43}
+rb_dcbm_CustBufferManager.h	:{'PRE02': 2}
+Dem_Cfg_Nvm.h	:{'PRE03': 2}
+Eep_Cfg.h	:{'PRE03': 2}
+Fls_Cfg.h	:{'PRE03': 2}
+rba_FlsRH850P1xC_Ext.h	:{'PRE06': 1}
+Bsw_MemMap.h	:{'PRE06': 1}
+Dcm_MemMap.h	:{'PRE06': 1}
+Det_MemMap.h	:{'PRE06': 1}
+rba_BswSrv_MemMap.h	:{'PRE06': 1}
+rba_DemIndiLitePS_Cfg_MemMap.h	:{'PRE06': 1}
+Rte_Type.h	:{'PRE06': 1}
+rba_BCL_Core_MemMap.h	:{'PRE06': 1}
+rb_ab12_checksums_cfg.h	:{'PRE06': 1}
+rb_svr_SafetyVoltageRegulator_Cfg.h	:{'PRE08': 1}
+rb_fcir_FourCalcIn_RomCfg_1.c	:{'PRE08': 1}
+rb_fcir_FourCalcIn_RomCfg_2.c	:{'PRE08': 1}
+rb_fcir_FourCalcIn_RomCfg_3.c	:{'PRE08': 1}
+rb_fcir_FourCalcIn_RomCfg_4.c	:{'PRE08': 1}
+rb_wim_WarningIndicatorMgt_Cfg.c	:{'PRE08': 1}
+rb_wimi_PAOx_Cfg.c	:{'PRE08': 1, 'STR34': 2}
+rb_swmf_CustSwitchMgtFaultHandler.c	:{'STR09': 1, 'STR34': 8}
