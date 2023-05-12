@@ -2,19 +2,24 @@ import openpyxl
 from openpyxl.styles import NamedStyle, PatternFill, Border, Side, Font, Alignment
 import re, time
 from deepdiff import DeepDiff
+# Variable Input
+workBookPath = r'../ComparisonCustLib.xlsx'
+firstWsName = "Analyzed"
+secondWsName = "Latest"
 
-wb = openpyxl.load_workbook(r'../Comparison_backup.xlsx')
-ws1 = wb["J12s"]
-ws2 = wb["CustlibPlus"]
+# Fill Input
+wb = openpyxl.load_workbook(workBookPath)
+ws1 = wb[firstWsName]
+ws2 = wb[secondWsName]
 wsDataSet1 = {
     "maxRows": len(ws1['B']),
-    "columnA": 2,
-    "columnB": 6,
+    "columnA": 2, #FileName
+    "columnB": 7, #RuleName
 }
 wsDataSet2 = {
     "maxRows": len(ws2['B']),
-    "columnA": 2,
-    "columnB": 7,
+    "columnA": 2, #FileName
+    "columnB": 6, #RuleName
 }
 dic1 = {}
 dic2 = {}
@@ -89,11 +94,11 @@ def InsertData(data, ws):
     nCol = 1
     for key, value in data.items():
         if key == "dictionary_item_added":
-            key = "J12s removed"
+            key = firstWsName + " removed"
         elif key == "dictionary_item_removed":
-            key = "J12s added"
+            key = firstWsName + " added"
         else:
-            key = "Values_changed : (new_value: CustLib; old_value: J12s)"
+            key = f"Values_changed : (new_value: {secondWsName}; old_value: {firstWsName})"
         cell = ws.cell(row=1, column=nCol, value=key)
         # Formatting cell
         BorderCell(cell)
@@ -125,7 +130,7 @@ if __name__ == "__main__":
     #         f.write(text)
     #         f.write('\n')
     try:
-        ws3 = wb.create_sheet("Diff_J12s_CustLib")
+        ws3 = wb.create_sheet("Diff_CustLib")
         InsertData(diff, ws3)
         wb.save("../Result.xlsx")
         print("Saving the current workbook successfully")
