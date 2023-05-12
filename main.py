@@ -15,11 +15,13 @@ wsDataSet1 = {
     "maxRows": len(ws1['B']),
     "columnA": 2, #FileName
     "columnB": 7, #RuleName
+    "columnC": 6, #Priority
 }
 wsDataSet2 = {
     "maxRows": len(ws2['B']),
     "columnA": 2, #FileName
     "columnB": 6, #RuleName
+    "columnC": 5, #Priority
 }
 dic1 = {}
 dic2 = {}
@@ -31,24 +33,26 @@ def CreateDataSet(ws, wsDataSet):
     for nRow in range(2, wsDataSet["maxRows"] + 1):
         cellValPrev = ws.cell(row=nRow - 1, column=wsDataSet["columnA"])
         cellValCurr = ws.cell(row=nRow, column=wsDataSet["columnA"])
-        if cellValPrev.value == cellValCurr.value and not flag:
-            flag = True
-            firstRow = nRow - 1
-        elif cellValPrev.value != cellValCurr.value:
-            if flag:
-                lastRow = nRow - 1
-                flag = False
-                if cellValPrev.value in dic:
-                    dic[cellValPrev.value].append([firstRow, lastRow])
+        priorityRule = ws.cell(row=nRow, column=wsDataSet["columnC"])
+        if priorityRule.value == "high":
+            if cellValPrev.value == cellValCurr.value and not flag:
+                flag = True
+                firstRow = nRow - 1
+            elif cellValPrev.value != cellValCurr.value:
+                if flag:
+                    lastRow = nRow - 1
+                    flag = False
+                    if cellValPrev.value in dic:
+                        dic[cellValPrev.value].append([firstRow, lastRow])
+                    else:
+                        listAdd = [[firstRow, lastRow]]
+                        dic[cellValPrev.value] = listAdd
                 else:
-                    listAdd = [[firstRow, lastRow]]
-                    dic[cellValPrev.value] = listAdd
-            else:
-                if cellValPrev.value in dic:
-                    dic[cellValPrev.value].append([nRow - 1, nRow - 1])
-                else:
-                    listAdd = [[nRow - 1, nRow - 1]]
-                    dic[cellValPrev.value] = listAdd
+                    if cellValPrev.value in dic:
+                        dic[cellValPrev.value].append([nRow - 1, nRow - 1])
+                    else:
+                        listAdd = [[nRow - 1, nRow - 1]]
+                        dic[cellValPrev.value] = listAdd
     # Add rules into the related files
     subDic = {}
     for key, value in dic.items():
