@@ -16,24 +16,30 @@ wsDataSet1 = {
     "columnA": 2, #FileName
     "columnB": 7, #RuleName
     "columnC": 6, #Priority
+    "columnD": 13, #Analysis
 }
 wsDataSet2 = {
     "maxRows": len(ws2['B']),
     "columnA": 2, #FileName
     "columnB": 6, #RuleName
     "columnC": 5, #Priority
+    "columnD": 9, #Analysis
 }
 dic1 = {}
 dic2 = {}
+copyDic1 = {}
+copyDic2 = {}
+analysisDic1 = {}
 def CreateDataSet(ws, wsDataSet):
     dic = {}
+    copyDic = {}
     flag = False
     firstRow = 0
     lastRow = 0
     for nRow in range(2, wsDataSet["maxRows"] + 1):
         cellValPrev = ws.cell(row=nRow - 1, column=wsDataSet["columnA"])
         cellValCurr = ws.cell(row=nRow, column=wsDataSet["columnA"])
-        priorityRule = ws.cell(row=nRow, column=wsDataSet["columnC"])
+        priorityRule = ws.cell(row=nRow - 1, column=wsDataSet["columnC"])
         if priorityRule.value == "high":
             if cellValPrev.value == cellValCurr.value and not flag:
                 flag = True
@@ -53,6 +59,9 @@ def CreateDataSet(ws, wsDataSet):
                     else:
                         listAdd = [[nRow - 1, nRow - 1]]
                         dic[cellValPrev.value] = listAdd
+    # Store current dictionary for further usage
+    for key, value in dic.items():
+        copyDic[key] = value
     # Add rules into the related files
     subDic = {}
     for key, value in dic.items():
@@ -70,7 +79,44 @@ def CreateDataSet(ws, wsDataSet):
                 subDic.setdefault(cellVarB.value, 1)
         dic[key] = subDic
         subDic = {}
-    return dic
+    return dic, copyDic
+
+def FillDataAnalysis(retrivedDic, filledDic , wsRetr, wsFilled, wsDataSetRetr, wsDataSetFilled):
+    analysisDic = {}
+    for key, value in retrivedDic.items():
+        for elem in value:
+            if elem[0] != elem[1]:
+                for nRow2 in range(elem[0], elem[1] + 1):
+                    cellVarD = wsRetr.cell(row=nRow2, column=wsDataSetRetr["columnD"])
+                    if key in analysisDic:
+                        analysisDic[key].append(cellVarD.value)
+                    else:
+                        analysisDic[key] = [cellVarD.value]
+            else:
+                cellVarD = wsRetr.cell(row=elem[0], column=wsDataSetRetr["columnD"])
+                if key in analysisDic:
+                    analysisDic[key].append(cellVarD.value)
+                else:
+                    analysisDic[key] = [cellVarD.value]
+    # Fill in needed wb
+    for key, value in filledDic.items():
+        for elem in value:
+            if elem[0] != elem[1]:
+                for nRow2 in range(elem[0], elem[1] + 1):
+                    cellVarD = wsFilled.cell(row=nRow2, column=wsDataSetFilled["columnD"])
+                    if key in analysisDic:
+                        # Need to check whether the analysis queue is empty or not after popping its elements
+                        cellVarD.value = analysisDic[key].pop()
+                    else:
+                        cellVarD.value = "Nope"
+            else:
+                cellVarD = wsFilled.cell(row=elem[0], column=wsDataSetFilled["columnD"])
+                if key in analysisDic:
+                    cellVarD.value = analysisDic[key].pop()
+                else:
+                    cellVarD.value = "Nope"
+    return analysisDic
+
 
 def CreateText(dic, filename):
     with open(f'{filename}.txt', 'w') as f:
@@ -123,16 +169,22 @@ def InsertData(data, ws):
 
 if __name__ == "__main__":
     i = 0
-    dic1 = CreateDataSet(ws1, wsDataSet1)
-    dic2 = CreateDataSet(ws2, wsDataSet2)
+    dic1, copyDic1 = CreateDataSet(ws1, wsDataSet1)
+    dic2, copyDic2 = CreateDataSet(ws2, wsDataSet2)
+    analysisDic1 = FillDataAnalysis(copyDic1, copyDic2, ws1, ws2, wsDataSet1, wsDataSet2)
+    # print(analysisDic1)
     diff = DeepDiff(dic1, dic2)
-    # CreateText(dic1, "J12s")
-    # CreateText(dic2, "CustLibPlus")
-    # with open(f'Diff.txt', 'w') as f:
+
+    CreateText(copyDic1, firstWsName)
+    CreateText(copyDic2, secondWsName)
+    CreateText(analysisDic1, "analysisText")
+
+    # with open(f'{firstWsName}_{secondWsName}_Diff.txt', 'w') as f:
     #     for x, y in diff.items():
     #         text = str(x) + '\t' + ':' + str(y)
     #         f.write(text)
     #         f.write('\n')
+
     try:
         ws3 = wb.create_sheet("Diff_CustLib")
         InsertData(diff, ws3)
