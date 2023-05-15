@@ -5,7 +5,7 @@ from deepdiff import DeepDiff
 # Variable Input
 workBookPath = r'../ComparisonCustLib.xlsx'
 firstWsName = "Analyzed"
-secondWsName = "Latest"
+secondWsName = "FuzzyTestApr"
 
 # Fill Input
 wb = openpyxl.load_workbook(workBookPath)
@@ -23,7 +23,7 @@ wsDataSet2 = {
     "columnA": 2, #FileName
     "columnB": 6, #RuleName
     "columnC": 5, #Priority
-    "columnD": 9, #Analysis
+    "columnD": 11, #Analysis
 }
 dic1 = {}
 dic2 = {}
@@ -106,7 +106,8 @@ def FillDataAnalysis(retrivedDic, filledDic , wsRetr, wsFilled, wsDataSetRetr, w
                     cellVarD = wsFilled.cell(row=nRow2, column=wsDataSetFilled["columnD"])
                     if key in analysisDic:
                         # Need to check whether the analysis queue is empty or not after popping its elements
-                        cellVarD.value = analysisDic[key].pop()
+                        if len(analysisDic[key]):
+                            cellVarD.value = analysisDic[key].pop(0)
                     else:
                         cellVarD.value = "Nope"
             else:
@@ -188,7 +189,7 @@ if __name__ == "__main__":
     try:
         ws3 = wb.create_sheet("Diff_CustLib")
         InsertData(diff, ws3)
-        wb.save("../Result.xlsx")
+        wb.save("../Result_150523.xlsx")
         print("Saving the current workbook successfully")
     except PermissionError:
         print("Please close workbook before saving")
