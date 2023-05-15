@@ -17,6 +17,7 @@ wsDataSet1 = {
     "columnB": 7, #RuleName
     "columnC": 6, #Priority
     "columnD": 13, #Analysis
+    "columnE": 8,  #Variable
 }
 wsDataSet2 = {
     "maxRows": len(ws2['B']),
@@ -24,12 +25,16 @@ wsDataSet2 = {
     "columnB": 6, #RuleName
     "columnC": 5, #Priority
     "columnD": 11, #Analysis
+    "columnE": 7,  #Variable
 }
 dic1 = {}
 dic2 = {}
 copyDic1 = {}
 copyDic2 = {}
 analysisDic1 = {}
+TestDic = {}
+
+
 def CreateDataSet(ws, wsDataSet):
     dic = {}
     copyDic = {}
@@ -87,40 +92,75 @@ def FillDataAnalysis(retrivedDic, filledDic , wsRetr, wsFilled, wsDataSetRetr, w
         for elem in value:
             if elem[0] != elem[1]:
                 for nRow2 in range(elem[0], elem[1] + 1):
-                    cellVarD = wsRetr.cell(row=nRow2, column=wsDataSetRetr["columnD"])
+                    cellVarD = wsRetr.cell(row=nRow2, column=wsDataSetRetr["columnD"]) #Analysis
+                    cellVarB = wsRetr.cell(row=nRow2, column=wsDataSetRetr["columnB"]) #Rules
+                    cellVarE = wsRetr.cell(row=nRow2, column=wsDataSetRetr["columnE"]) #Variables
                     if key in analysisDic:
-                        analysisDic[key].append(cellVarD.value)
+                        analysisDic[key].append({cellVarB.value: {cellVarE.value: cellVarD.value}})
                     else:
-                        analysisDic[key] = [cellVarD.value]
+                        analysisDic[key] = [{cellVarB.value: {cellVarE.value: cellVarD.value}}] # {Rule : {Var: Analysis}}
             else:
-                cellVarD = wsRetr.cell(row=elem[0], column=wsDataSetRetr["columnD"])
+                nRow2 = elem[0]
+                cellVarD = wsRetr.cell(row=nRow2, column=wsDataSetRetr["columnD"]) #Analysis
+                cellVarB = wsRetr.cell(row=nRow2, column=wsDataSetRetr["columnB"])  # Rules
+                cellVarE = wsRetr.cell(row=nRow2, column=wsDataSetRetr["columnE"])  # Variables
                 if key in analysisDic:
-                    analysisDic[key].append(cellVarD.value)
+                    analysisDic[key].append({cellVarB.value: {cellVarE.value: cellVarD.value}})
                 else:
-                    analysisDic[key] = [cellVarD.value]
+                    analysisDic[key] = [{cellVarB.value: {cellVarE.value: cellVarD.value}}]
+    # Store current dictionary for further usage
+    for key, value in analysisDic.items():
+        TestDic[key] = value
     # Fill in needed wb
     for key, value in filledDic.items():
         for elem in value:
             if elem[0] != elem[1]:
                 for nRow2 in range(elem[0], elem[1] + 1):
-                    cellVarD = wsFilled.cell(row=nRow2, column=wsDataSetFilled["columnD"])
+                    cellVarD = wsFilled.cell(row=nRow2, column=wsDataSetFilled["columnD"]) #Analysis
+                    cellVarB = wsFilled.cell(row=nRow2, column=wsDataSetFilled["columnB"]) # Rules
+                    cellVarE = wsFilled.cell(row=nRow2, column=wsDataSetFilled["columnE"]) # Variables
                     if key in analysisDic:
                         # Need to check whether the analysis queue is empty or not after popping its elements
                         if len(analysisDic[key]):
-                            cellVarD.value = analysisDic[key].pop(0)
+                            if cellVarB.value in analysisDic[key][0]:
+                                if cellVarE.value in analysisDic[key][0][cellVarB.value]:
+                                    cellVarD.value = analysisDic[key][0][cellVarB.value][cellVarE.value]
+                                    analysisDic[key].pop(0)
+                                else:
+                                    cellVarD.value = "Need to fill an analysis 1"
+                            else:
+                                cellVarD.value = "Need to fill an analysis 2"
+                        else:
+                            cellVarD.value = "Need to fill an analysis 3"
+                        # else the queue is empty
                     else:
                         cellVarD.value = "Nope"
             else:
-                cellVarD = wsFilled.cell(row=elem[0], column=wsDataSetFilled["columnD"])
+                nRow2 = elem[0]
+                cellVarD = wsFilled.cell(row=nRow2, column=wsDataSetFilled["columnD"])  # Analysis
+                cellVarB = wsFilled.cell(row=nRow2, column=wsDataSetFilled["columnB"])  # Rules
+                cellVarE = wsFilled.cell(row=nRow2, column=wsDataSetFilled["columnE"])  # Variables
                 if key in analysisDic:
-                    cellVarD.value = analysisDic[key].pop()
+                    # Need to check whether the analysis queue is empty or not after popping its elements
+                    if len(analysisDic[key]):
+                        if cellVarB.value in analysisDic[key][0]:
+                            if cellVarE.value in analysisDic[key][0][cellVarB.value]:
+                                cellVarD.value = analysisDic[key][0][cellVarB.value][cellVarE.value]
+                                analysisDic[key].pop(0)
+                            else:
+                                cellVarD.value = "Need to fill an analysis 1"
+                        else:
+                            cellVarD.value = "Need to fill an analysis 2"
+                    else:
+                        cellVarD.value = "Need to fill an analysis 3"
+                    # else the queue is empty
                 else:
                     cellVarD.value = "Nope"
     return analysisDic
 
 
 def CreateText(dic, filename):
-    with open(f'{filename}.txt', 'w') as f:
+    with open(f'../{filename}.txt', 'w') as f:
         for x, y in dic.items():
             text = x + '\t' + ':' + str(y)
             f.write(text)
@@ -173,12 +213,11 @@ if __name__ == "__main__":
     dic1, copyDic1 = CreateDataSet(ws1, wsDataSet1)
     dic2, copyDic2 = CreateDataSet(ws2, wsDataSet2)
     analysisDic1 = FillDataAnalysis(copyDic1, copyDic2, ws1, ws2, wsDataSet1, wsDataSet2)
-    # print(analysisDic1)
     diff = DeepDiff(dic1, dic2)
 
     CreateText(copyDic1, firstWsName)
     CreateText(copyDic2, secondWsName)
-    CreateText(analysisDic1, "analysisText")
+    CreateText(TestDic, "analysisText")
 
     # with open(f'{firstWsName}_{secondWsName}_Diff.txt', 'w') as f:
     #     for x, y in diff.items():
