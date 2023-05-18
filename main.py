@@ -1,11 +1,13 @@
 import openpyxl
 from openpyxl.styles import NamedStyle, PatternFill, Border, Side, Font, Alignment
-import re, time
+import re
 from deepdiff import DeepDiff
+from datetime import date
 # Variable Input
 workBookPath = r'../ComparisonCustLib.xlsx'
 firstWsName = "Analyzed"
 secondWsName = "FuzzyTestApr"
+today = date.today().strftime("%d%m%Y")
 
 # Fill Input
 wb = openpyxl.load_workbook(workBookPath)
@@ -32,8 +34,7 @@ dic2 = {}
 copyDic1 = {}
 copyDic2 = {}
 analysisDic1 = {}
-TestDic = {}
-
+unresolvedRetrivedDic1 = {}
 
 def CreateDataSet(ws, wsDataSet):
     dic = {}
@@ -109,8 +110,8 @@ def FillDataAnalysis(retrivedDic, filledDic , wsRetr, wsFilled, wsDataSetRetr, w
                 else:
                     analysisDic[key] = [{cellVarB.value: {cellVarE.value: cellVarD.value}}]
     # Store current dictionary for further usage
-    for key, value in analysisDic.items():
-        TestDic[key] = value
+    TestDic = analysisDic.copy()
+    CreateText(TestDic, "TestDic1")
     # Fill in needed wb
     for key, value in filledDic.items():
         for elem in value:
@@ -127,14 +128,40 @@ def FillDataAnalysis(retrivedDic, filledDic , wsRetr, wsFilled, wsDataSetRetr, w
                                     cellVarD.value = analysisDic[key][0][cellVarB.value][cellVarE.value]
                                     analysisDic[key].pop(0)
                                 else:
-                                    cellVarD.value = "Need to fill an analysis 1"
+                                    for remainIdx in range(1, len(analysisDic[key])):
+                                        if cellVarB.value in analysisDic[key][remainIdx]:
+                                            if cellVarE.value in analysisDic[key][remainIdx][cellVarB.value]:
+                                                cellVarD.value = analysisDic[key][remainIdx][cellVarB.value][cellVarE.value]
+                                                analysisDic[key].pop(remainIdx)
+                                                break
+                                    if cellVarD.value == "NOK":
+                                        cellVarD.value = "Need to fill an analysis 1"
+                                        analysisDic[key].append(analysisDic[key].pop(0))
                             else:
-                                cellVarD.value = "Need to fill an analysis 2"
+                                for idx in range(len(analysisDic[key])):
+                                    if idx < len(analysisDic[key]):
+                                        if cellVarB.value in analysisDic[key][idx]:
+                                            # Need to find the first matching rule in the analysisDic then do the same steps as from line 165 to line 188
+                                            # cellVarD.value = "Need to fill an analysis 2"
+                                            if cellVarE.value in analysisDic[key][idx][cellVarB.value]:
+                                                cellVarD.value = analysisDic[key][idx][cellVarB.value][cellVarE.value]
+                                            else:
+                                                # should halt this outer iteration until the current unresolved cell is filled
+                                                for remainIdx in range(len(analysisDic[key])):
+                                                    if cellVarB.value in analysisDic[key][remainIdx]:
+                                                        if cellVarE.value in analysisDic[key][remainIdx][cellVarB.value]:
+                                                            cellVarD.value = analysisDic[key][remainIdx][cellVarB.value][
+                                                                cellVarE.value]
+                                                            analysisDic[key].pop(remainIdx)
+                                                            break
+                                                if cellVarD.value == "NOK":
+                                                    cellVarD.value = "Need to fill an analysis 1"
+                                                    analysisDic[key].append(analysisDic[key].pop(idx))
                         else:
-                            cellVarD.value = "Need to fill an analysis 3"
+                            cellVarD.value = "Need to fill an analysis 2"
                         # else the queue is empty
                     else:
-                        cellVarD.value = "Nope"
+                        cellVarD.value = "Need to fill an analysis 3"
             else:
                 nRow2 = elem[0]
                 cellVarD = wsFilled.cell(row=nRow2, column=wsDataSetFilled["columnD"])  # Analysis
@@ -146,16 +173,42 @@ def FillDataAnalysis(retrivedDic, filledDic , wsRetr, wsFilled, wsDataSetRetr, w
                         if cellVarB.value in analysisDic[key][0]:
                             if cellVarE.value in analysisDic[key][0][cellVarB.value]:
                                 cellVarD.value = analysisDic[key][0][cellVarB.value][cellVarE.value]
-                                analysisDic[key].pop(0)
                             else:
-                                cellVarD.value = "Need to fill an analysis 1"
+                                # should halt this outer iteration until the current unresolved cell is filled
+                                for remainIdx in range(1, len(analysisDic[key])):
+                                    if cellVarB.value in analysisDic[key][remainIdx]:
+                                        if cellVarE.value in analysisDic[key][remainIdx][cellVarB.value]:
+                                            cellVarD.value = analysisDic[key][remainIdx][cellVarB.value][cellVarE.value]
+                                            analysisDic[key].pop(remainIdx)
+                                            break
+                                if cellVarD.value == "NOK":
+                                    cellVarD.value = "Need to fill an analysis 1"
+                                    analysisDic[key].append(analysisDic[key].pop(0))
                         else:
-                            cellVarD.value = "Need to fill an analysis 2"
+                            for idx in range(len(analysisDic[key])):
+                                if idx < len(analysisDic[key]):
+                                    if cellVarB.value in analysisDic[key][idx]:
+                                    # Need to find the first matching rule in the analysisDic then do the same steps as from line 165 to line 188
+                                    #cellVarD.value = "Need to fill an analysis 2"
+                                        if cellVarE.value in analysisDic[key][idx][cellVarB.value]:
+                                            cellVarD.value = analysisDic[key][idx][cellVarB.value][cellVarE.value]
+                                        else:
+                                            # should halt this outer iteration until the current unresolved cell is filled
+                                            for remainIdx in range(len(analysisDic[key])):
+                                                if cellVarB.value in analysisDic[key][remainIdx]:
+                                                    if cellVarE.value in analysisDic[key][remainIdx][cellVarB.value]:
+                                                        cellVarD.value = analysisDic[key][remainIdx][cellVarB.value][
+                                                            cellVarE.value]
+                                                        analysisDic[key].pop(remainIdx)
+                                                        break
+                                            if cellVarD.value == "NOK":
+                                                cellVarD.value = "Need to fill an analysis 1"
+                                                analysisDic[key].append(analysisDic[key].pop(idx))
                     else:
-                        cellVarD.value = "Need to fill an analysis 3"
+                        cellVarD.value = "Need to fill an analysis 2"
                     # else the queue is empty
                 else:
-                    cellVarD.value = "Nope"
+                    cellVarD.value = "Need to fill an analysis 3"
     return analysisDic
 
 
@@ -208,6 +261,15 @@ def InsertData(data, ws):
             nRow += 1
         nCol += 1
 
+def generateDiffWorksheet(wsName):
+    try:
+        ws3 = wb.create_sheet(f"{wsName}")
+        InsertData(diff, ws3)
+        wb.save(f"../Result_{today}.xlsx")
+        print("Saving the current workbook successfully")
+    except PermissionError:
+        print("Please close workbook before saving")
+
 if __name__ == "__main__":
     i = 0
     dic1, copyDic1 = CreateDataSet(ws1, wsDataSet1)
@@ -217,19 +279,8 @@ if __name__ == "__main__":
 
     CreateText(copyDic1, firstWsName)
     CreateText(copyDic2, secondWsName)
-    CreateText(TestDic, "analysisText")
+    CreateText(analysisDic1, "analysisDic1")
 
-    # with open(f'{firstWsName}_{secondWsName}_Diff.txt', 'w') as f:
-    #     for x, y in diff.items():
-    #         text = str(x) + '\t' + ':' + str(y)
-    #         f.write(text)
-    #         f.write('\n')
+    #generateDiffWorksheet(f"Diff_{firstWsName}_{secondWsName}")
 
-    try:
-        ws3 = wb.create_sheet("Diff_CustLib")
-        InsertData(diff, ws3)
-        wb.save("../Result_150523.xlsx")
-        print("Saving the current workbook successfully")
-    except PermissionError:
-        print("Please close workbook before saving")
 
